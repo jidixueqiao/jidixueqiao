@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-label="jidixueqiao — AI safety / MCP / SQL / Vue">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#07030f"/>
+      <stop offset="45%" stop-color="#150a28"/>
+      <stop offset="78%" stop-color="#2b0f42"/>
+      <stop offset="100%" stop-color="#3a0f45"/>
+    </linearGradient>
+
+    <linearGradient id="sunGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff07a"/>
+      <stop offset="38%" stop-color="#ff9a3d"/>
+      <stop offset="72%" stop-color="#ff3d81"/>
+      <stop offset="100%" stop-color="#f92672"/>
+    </linearGradient>
+
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00e5ff"/>
+      <stop offset="48%" stop-color="#f92672"/>
+      <stop offset="100%" stop-color="#b537f2"/>
+    </linearGradient>
+
+    <radialGradient id="bloom" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#ff5fa2" stop-opacity="0.55"/>
+      <stop offset="55%" stop-color="#b537f2" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#b537f2" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="scanBar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1.6" fill="#ffffff" opacity="0.05"/>
+    </pattern>
+
+    <filter id="bloomBlur" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+
+    <filter id="neonBlur" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softTextGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3.2" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <mask id="sunMask">
+      <rect x="0" y="0" width="1200" height="360" fill="#000"/>
+      <circle cx="600" cy="250" r="96" fill="#fff"/>
+      <g fill="#000">
+        <rect x="480" y="205" width="240" height="3"/>
+        <rect x="480" y="216" width="240" height="4"/>
+        <rect x="480" y="228" width="240" height="5"/>
+        <rect x="480" y="241" width="240" height="6"/>
+        <rect x="480" y="255" width="240" height="7"/>
+        <rect x="480" y="270" width="240" height="8"/>
+        <rect x="480" y="286" width="240" height="9"/>
+        <rect x="480" y="303" width="240" height="10"/>
+      </g>
+    </mask>
+
+    <clipPath id="gridClip">
+      <rect x="0" y="255" width="1200" height="105"/>
+    </clipPath>
+
+    <style>
+      .mono { font-family: 'JetBrains Mono','Cascadia Mono','SF Mono',ui-monospace,Consolas,'Liberation Mono',monospace; }
+      .pulse { animation: pulse 3.4s ease-in-out infinite; }
+      @keyframes pulse { 0%,100% { opacity: .5; } 50% { opacity: 1; } }
+      .flick { animation: flick 7s steps(1,end) infinite; }
+      @keyframes flick {
+        0%,96%,100% { opacity: 1; }
+        97% { opacity: .72; }
+        98% { opacity: .95; }
+      }
+    </style>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1200" height="360" fill="url(#bg)"/>
+
+  <!-- 星点 -->
+  <g fill="#ffffff">
+    <circle cx="120" cy="52" r="1.4" opacity=".55"/>
+    <circle cx="268" cy="28" r="1" opacity=".35"/>
+    <circle cx="392" cy="74" r="1.2" opacity=".45"/>
+    <circle cx="530" cy="34" r="1" opacity=".3"/>
+    <circle cx="668" cy="66" r="1.3" opacity=".4"/>
+    <circle cx="812" cy="26" r="1" opacity=".5"/>
+    <circle cx="946" cy="60" r="1.1" opacity=".35"/>
+    <circle cx="1082" cy="38" r="1.5" opacity=".5"/>
+    <circle cx="1150" cy="96" r="1" opacity=".3"/>
+    <circle cx="200" cy="108" r="1" opacity=".28"/>
+    <circle cx="1004" cy="118" r="1.2" opacity=".26"/>
+  </g>
+
+  <!-- 太阳光晕 -->
+  <ellipse cx="600" cy="250" rx="230" ry="150" fill="url(#bloom)" filter="url(#bloomBlur)" class="pulse"/>
+
+  <!-- 条纹太阳 -->
+  <g mask="url(#sunMask)">
+    <circle cx="600" cy="250" r="96" fill="url(#sunGrad)"/>
+  </g>
+  <g mask="url(#sunMask)">
+    <animateTransform attributeName="transform" type="translate" from="0 0" to="0 22" dur="5s" repeatCount="indefinite"/>
+    <g fill="#000">
+      <rect x="480" y="205" width="240" height="3"/>
+      <rect x="480" y="216" width="240" height="4"/>
+      <rect x="480" y="228" width="240" height="5"/>
+      <rect x="480" y="241" width="240" height="6"/>
+      <rect x="480" y="255" width="240" height="7"/>
+      <rect x="480" y="270" width="240" height="8"/>
+      <rect x="480" y="286" width="240" height="9"/>
+      <rect x="480" y="303" width="240" height="10"/>
+    </g>
+  </g>
+
+  <!-- 地平线 -->
+  <rect x="0" y="253" width="1200" height="3" fill="url(#neon)" filter="url(#neonBlur)" opacity=".95"/>
+
+  <!-- 透视网格 -->
+  <g clip-path="url(#gridClip)" stroke="url(#neon)" fill="none">
+    <g opacity=".55">
+      <path d="M600 255 L-600 360"/>
+      <path d="M600 255 L-400 360"/>
+      <path d="M600 255 L-200 360"/>
+      <path d="M600 255 L0 360"/>
+      <path d="M600 255 L200 360"/>
+      <path d="M600 255 L400 360"/>
+      <path d="M600 255 L600 360"/>
+      <path d="M600 255 L800 360"/>
+      <path d="M600 255 L1000 360"/>
+      <path d="M600 255 L1200 360"/>
+      <path d="M600 255 L1400 360"/>
+      <path d="M600 255 L1600 360"/>
+      <path d="M600 255 L1800 360"/>
+    </g>
+    <g opacity=".45" stroke-width="1">
+      <path d="M0 258 H1200"/>
+      <path d="M0 267 H1200"/>
+      <path d="M0 282 H1200"/>
+      <path d="M0 303 H1200"/>
+      <path d="M0 330 H1200"/>
+      <path d="M0 360 H1200"/>
+    </g>
+  </g>
+
+  <!-- 标题霓虹底色（色差效果） -->
+  <g class="mono" font-size="64" font-weight="700" letter-spacing="7" text-anchor="middle">
+    <text x="597" y="132" fill="#00e5ff" opacity=".5" filter="url(#softTextGlow)">jidixueqiao</text>
+    <text x="603" y="132" fill="#f92672" opacity=".5" filter="url(#softTextGlow)">jidixueqiao</text>
+    <text x="600" y="132" fill="#ffffff" filter="url(#softTextGlow)">jidixueqiao</text>
+  </g>
+
+  <!-- 副标题 -->
+  <text class="mono flick" x="600" y="172" font-size="17" letter-spacing="6.5" text-anchor="middle" fill="#00e5ff" opacity=".92">
+    AI SAFETY · MCP SERVER · SQL · VUE · NETWORK
+  </text>
+
+  <!-- 终端标签 -->
+  <text class="mono" x="42" y="44" font-size="15" fill="#00e5ff" opacity=".85">$ whoami</text>
+  <text class="mono" x="1158" y="44" font-size="15" fill="#f92672" opacity=".85" text-anchor="end">~/jidixueqiao</text>
+  <text class="mono" x="42" y="66" font-size="12" fill="#ffffff" opacity=".4">uid=1000(jidixueqiao) gid=1000(builders)</text>
+
+  <!-- 底部状态栏 -->
+  <g class="mono" font-size="12.5" letter-spacing="1">
+    <rect x="42" y="326" width="9" height="9" rx="1" fill="#00e5ff" class="pulse"/>
+    <text x="60" y="335" fill="#ffffff" opacity=".62">build: passing</text>
+    <text x="1158" y="335" fill="#ffffff" opacity=".4" text-anchor="end">sql_mcp · ai-minesweeper · person-web</text>
+  </g>
+
+  <!-- CRT 扫描线 + 滚动亮带 -->
+  <rect width="1200" height="360" fill="url(#scanlines)"/>
+  <rect x="0" y="-60" width="1200" height="60" fill="url(#scanBar)">
+    <animate attributeName="y" from="-60" to="420" dur="7s" repeatCount="indefinite"/>
+  </rect>
+</svg>

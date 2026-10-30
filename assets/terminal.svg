@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="656" height="454" viewBox="0 0 656 454" role="img" aria-label="terminal profile">
+<defs>
+  <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#00e5ff"/><stop offset="50%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#f92672"/>
+  </linearGradient>
+  <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#00e5ff"/><stop offset="100%" stop-color="#f92672"/>
+  </linearGradient>
+  <linearGradient id="scanBar" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+    <stop offset="50%" stop-color="#ffffff" stop-opacity="0.045"/>
+    <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+  </linearGradient>
+  <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+    <rect width="4" height="1.5" fill="#ffffff" opacity="0.035"/>
+  </pattern>
+  <clipPath id="panel"><rect x="1" y="1" width="654" height="452" rx="10"/></clipPath>
+</defs>
+<rect x="1" y="1" width="654" height="452" rx="10" fill="#0d1117"/>
+<rect x="1.5" y="1.5" width="653" height="451" rx="10" fill="none" stroke="url(#edge)" stroke-width="1.5" opacity="0.85"/>
+<g clip-path="url(#panel)">
+<rect x="1" y="1" width="654" height="46" fill="#161b22"/>
+<rect x="1" y="46" width="654" height="1" fill="#30363d"/>
+</g>
+<circle cx="18" cy="23.0" r="5" fill="#ff5f57"/>
+<circle cx="34" cy="23.0" r="5" fill="#febc2e"/>
+<circle cx="50" cy="23.0" r="5" fill="#28c840"/>
+<text x="328.0" y="28.0" text-anchor="middle" fill="#8b949e" font-size="13" font-family="ui-monospace,SFMono-Regular,Consolas,monospace">jidixueqiao — ~/profile</text>
+<g font-family="ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',monospace" font-size="15" fill="#c9d1d9">
+<text x="20.0" y="81" fill="#7ee787">$ </text>
+<text x="38.0" y="81" fill="#e6edf3">whoami</text>
+<text x="20.0" y="103" fill="#d2a8ff">jidixueqiao</text>
+<text x="119.0" y="103" fill="#8b949e">  —  AI 安全方向开发者</text>
+<text x="20.0" y="125" fill="#8b949e">Python · MCP · SQL · Vue · JavaScript · 网络基础设施</text>
+<text x="20.0" y="169" fill="#7ee787">$ </text>
+<text x="38.0" y="169" fill="#e6edf3">cat </text>
+<text x="74.0" y="169" fill="#79c0ff">focus.txt</text>
+<text x="20.0" y="191" fill="#8b949e">让 AI 有能力碰生产数据库，但没有能力搞坏它。</text>
+<text x="20.0" y="235" fill="#7ee787">$ </text>
+<text x="38.0" y="235" fill="#e6edf3">ls -la </text>
+<text x="101.0" y="235" fill="#79c0ff">~/projects</text>
+<text x="20.0" y="257" fill="#8b949e">drwxr-xr-x  </text>
+<text x="128.0" y="257" fill="#79c0ff">sql_mcp</text>
+<text x="191.0" y="257" fill="#8b949e">          Python  MIT   </text>
+<text x="407.0" y="257" fill="#8b949e">安全审计型 SQL MCP Server</text>
+<text x="20.0" y="279" fill="#8b949e">drwxr-xr-x  </text>
+<text x="128.0" y="279" fill="#79c0ff">ai-minesweeper</text>
+<text x="254.0" y="279" fill="#8b949e">   Vue     MIT   </text>
+<text x="407.0" y="279" fill="#8b949e">用 cursor ai 写出来的扫雷</text>
+<text x="20.0" y="301" fill="#8b949e">drwxr-xr-x  </text>
+<text x="128.0" y="301" fill="#79c0ff">person-web</text>
+<text x="218.0" y="301" fill="#8b949e">       JS      --    </text>
+<text x="407.0" y="301" fill="#8b949e">个人网站 (Pages)</text>
+<text x="20.0" y="345" fill="#7ee787">$ </text>
+<text x="38.0" y="345" fill="#e6edf3">systemctl status build</text>
+<text x="20.0" y="367" fill="#7ee787">● </text>
+<text x="38.0" y="367" fill="#d2a8ff">active (running)</text>
+<text x="182.0" y="367" fill="#8b949e">   since 2017-08-19</text>
+<text x="20.0" y="411" fill="#7ee787">$ </text>
+<text x="38.0" y="411" fill="#e6edf3">echo </text>
+<text x="83.0" y="411" fill="#79c0ff">$FOCUS</text>
+<text x="20.0" y="433" fill="#ff7b72">让 AI 安全地操作真实数据</text>
+</g>
+<g clip-path="url(#panel)">
+<rect x="1" y="1" width="654" height="452" fill="url(#scan)"/>
+<rect x="1" y="-60" width="654" height="60" fill="url(#scanBar)"><animate attributeName="y" from="-60" to="514" dur="8s" repeatCount="indefinite"/></rect>
+</g>
+</svg>
